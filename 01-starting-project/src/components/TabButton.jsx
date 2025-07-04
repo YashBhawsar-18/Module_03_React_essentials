@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const TabButton = ({label}) => {
+const TabButton = ({children, onSelect}) => {
+
+  
   return (
-    <li><button>{label}</button></li>
-  )
-}
+    <li>
+      <button onClick={onSelect}>{children}</button>
+    </li>
+  );
+};
 
-export default TabButton
+export default TabButton;
